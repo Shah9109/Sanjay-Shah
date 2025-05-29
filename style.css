@@ -1,0 +1,344 @@
+/* General Styles */
+body {
+    font-family: sans-serif; /* Replace with a professional font later */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('background.png');
+    background-size: cover;
+    background-attachment: fixed; /* Makes background fixed while content scrolls */
+    background-position: center;
+    color: #333; /* Dark grey text */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff; /* Blue links */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #fff; /* White background */
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    padding-top: 100px; /* Space for fixed header */
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
+    color: #fff;
+    text-align: center;
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Circular photo */
+    border: 5px solid #fff;
+    margin-bottom: 20px;
+}
+
+.bio h1 {
+    margin-top: 0;
+    font-size: 2.5em;
+}
+
+.bio h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #ddd;
+}
+
+.bio p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.social-links a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.8em;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #007bff; /* Highlight on hover */
+}
+
+/* Portfolio Sections */
+.portfolio-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.portfolio-section h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px); /* Subtle lift on hover */
+}
+
+.project-card h3 {
+    margin-top: 0;
+    font-size: 1.3em;
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+}
+
+.project-card .upload-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.project-card .upload-btn:hover {
+    background-color: #0056b3;
+}
+
+.music-card .video-placeholder {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    margin-bottom: 15px;
+}
+
+.music-card .video-placeholder iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 60px 0;
+    background-color: #f9f9f9; /* Slightly different background */
+}
+
+.contact-section h2 {
+     font-size: 2em;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.contact-content form {
+    flex: 1 1 400px; /* Allow form to grow and shrink */
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.btn-submit {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+.contact-info {
+    flex: 1 1 300px; /* Allow contact info to grow and shrink */
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.contact-info p {
+    margin-top: 0;
+    font-size: 1.1em;
+}
+
+.contact-info .social-links {
+    margin-top: 20px;
+}
+
+.contact-info .social-links a {
+    color: #333; /* Darker icons in contact section */
+    margin: 0 10px 0 0; /* Adjust spacing */
+    font-size: 1.5em;
+}
+
+.contact-info .social-links a:hover {
+    color: #007bff;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-links a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5em;
+}
+
+.footer-links a:hover {
+    color: #007bff;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .hero .container {
+        flex-direction: column-reverse; /* Photo above bio on small screens */
+    }
+
+    .bio h1 {
+        font-size: 2em;
+    }
+
+    .bio h2 {
+        font-size: 1.2em;
+    }
+
+    .contact-content {
+        flex-direction: column;
+    }
+} 

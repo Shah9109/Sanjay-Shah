@@ -1,0 +1,302 @@
+{
+  "web_development": [
+    {
+      "title": "E-commerce Platform",
+      "description": "A fully functional e-commerce website built with React and Node.js.",
+      "link": "https://github.com/dummy/ecommerce-project",
+      "image": "https://via.placeholder.com/400x300"
+    },
+    {
+      "title": "Task Management App",
+      "description": "A simple to-do list application using vanilla JavaScript.",
+      "link": "https://github.com/dummy/todo-app",
+      "image": "https://via.placeholder.com/400x300"
+    },
+    {
+      "title": "Blog Platform",
+      "description": "A responsive blog site with a simple CMS backend.",
+      "link": "https://github.com/dummy/blog-platform",
+      "image": "https://via.placeholder.com/400x300"
+    },
+     {
+      "title": "Weather Dashboard",
+      "description": "Displays current weather information using a third-party API.",
+      "link": "https://github.com/dummy/weather-dashboard",
+      "image": "https://via.placeholder.com/400x300"
+    },
+     {
+      "title": "Quiz Application",
+      "description": "An interactive quiz with multiple categories and difficulty levels.",
+      "link": "https://github.com/dummy/quiz-app",
+      "image": "https://via.placeholder.com/400x300"
+    },
+     {
+      "title": "Portfolio Website",
+      "description": "The source code for this very portfolio site!",
+      "link": "https://github.com/dummy/portfolio-site",
+      "image": "https://via.placeholder.com/400x300"
+    },
+     {
+      "title": "Landing Page Template",
+      "description": "A clean and modern landing page designed with Bootstrap.",
+      "link": "https://github.com/dummy/landing-page",
+      "image": "https://via.placeholder.com/400x300"
+    },
+     {
+      "title": "Calculator App",
+      "description": "A basic calculator with arithmetic operations.",
+      "link": "https://github.com/dummy/calculator-app",
+      "image": "https://via.placeholder.com/400x300"
+    },
+     {
+      "title": "Random Quote Generator",
+      "description": "Displays random quotes fetched from an API.",
+      "link": "https://github.com/dummy/quote-generator",
+      "image": "https://via.placeholder.com/400x300"
+    },
+     {
+      "title": "Image Gallery",
+      "description": "A dynamic image gallery with filtering options.",
+      "link": "https://github.com/dummy/image-gallery",
+      "image": "https://via.placeholder.com/400x300"
+    }
+  ],
+  "ios_development": [
+    {
+      "name": "Notes App",
+      "description": "A simple note-taking application for iOS.",
+      "link": "https://github.com/dummy/ios-notes-app",
+      "image": "https://via.placeholder.com/300x500"
+    },
+     {
+      "name": "Weather App",
+      "description": "Displays weather forecasts using a weather API.",
+      "link": "https://github.com/dummy/ios-weather-app",
+      "image": "https://via.placeholder.com/300x500"
+    },
+     {
+      "name": "Calculator App",
+      "description": "A basic calculator application for iOS.",
+      "link": "https://github.com/dummy/ios-calculator",
+      "image": "https://via.placeholder.com/300x500"
+    },
+     {
+      "name": "To-Do List",
+      "description": "A task management app with reminders and due dates.",
+      "link": "https://github.com/dummy/ios-todo-list",
+      "image": "https://via.placeholder.com/300x500"
+    },
+     {
+      "name": "Recipe Finder",
+      "description": "Find and save recipes from online sources.",
+      "link": "https://github.com/dummy/ios-recipe-finder",
+      "image": "https://via.placeholder.com/300x500"
+    },
+     {
+      "name": "Unit Converter",
+      "description": "Converts between various units of measurement.",
+      "link": "https://github.com/dummy/ios-unit-converter",
+      "image": "https://via.placeholder.com/300x500"
+    },
+     {
+      "name": "Photo Gallery",
+      "description": "Browse and organize photos on the device.",
+      "link": "https://github.com/dummy/ios-photo-gallery",
+      "image": "https://via.placeholder.com/300x500"
+    },
+     {
+      "name": "Music Player",
+      "description": "A simple music player app.",
+      "link": "https://github.com/dummy/ios-music-player",
+      "image": "https://via.placeholder.com/300x500"
+    },
+     {
+      "name": "Drawing App",
+      "description": "A basic drawing application with different brush tools.",
+      "link": "https://github.com/dummy/ios-drawing-app",
+      "image": "https://via.placeholder.com/300x500"
+    },
+     {
+      "name": "Expense Tracker",
+      "description": "Track and categorize daily expenses.",
+      "link": "https://github.com/dummy/ios-expense-tracker",
+      "image": "https://via.placeholder.com/300x500"
+    }
+  ],
+  "android_development": [
+    {
+      "name": "Notes App",
+      "description": "A simple note-taking application for Android.",
+      "link": "https://github.com/dummy/android-notes-app",
+      "image": "https://via.placeholder.com/300x500"
+    },
+     {
+      "name": "Weather App",
+      "description": "Displays weather forecasts using a weather API.",
+      "link": "https://github.com/dummy/android-weather-app",
+      "image": "https://via.placeholder.com/300x500"
+    },
+     {
+      "name": "Calculator App",
+      "description": "A basic calculator application for Android.",
+      "link": "https://github.com/dummy/android-calculator",
+      "image": "https://via.placeholder.com/300x500"
+    },
+     {
+      "name": "To-Do List",
+      "description": "A task management app with reminders and due dates.",
+      "link": "https://github.com/dummy/android-todo-list",
+      "image": "https://via.placeholder.com/300x500"
+    },
+     {
+      "name": "Recipe Finder",
+      "description": "Find and save recipes from online sources.",
+      "link": "https://github.com/dummy/android-recipe-finder",
+      "image": "https://via.placeholder.com/300x500"
+    },
+     {
+      "name": "Unit Converter",
+      "description": "Converts between various units of measurement.",
+      "link": "https://github.com/dummy/android-unit-converter",
+      "image": "https://via.placeholder.com/300x500"
+    },
+     {
+      "name": "Photo Gallery",
+      "description": "Browse and organize photos on the device.",
+      "link": "https://github.com/dummy/android-photo-gallery",
+      "image": "https://via.placeholder.com/300x500"
+    },
+     {
+      "name": "Music Player",
+      "description": "A simple music player app.",
+      "link": "https://github.com/dummy/android-music-player",
+      "image": "https://via.placeholder.com/300x500"
+    },
+     {
+      "name": "Drawing App",
+      "description": "A basic drawing application with different brush tools.",
+      "link": "https://github.com/dummy/android-drawing-app",
+      "image": "https://via.placeholder.com/300x500"
+    },
+     {
+      "name": "Expense Tracker",
+      "description": "Track and categorize daily expenses.",
+      "link": "https://github.com/dummy/android-expense-tracker",
+      "image": "https://via.placeholder.com/300x500"
+    }
+  ],
+  "books": [
+    {
+      "title": "The Enigma of Eldoria",
+      "description": "A fantasy novel set in a world of magic and mystery.",
+      "amazon_link": "https://www.amazon.com/dummy/book1",
+      "cover_image": "https://via.placeholder.com/200x300"
+    },
+     {
+      "title": "Coding for Beginners",
+      "description": "An introductory guide to programming for absolute beginners.",
+      "amazon_link": "https://www.amazon.com/dummy/book2",
+      "cover_image": "https://via.placeholder.com/200x300"
+    },
+     {
+      "title": "AI Music Creation",
+      "description": "Exploring the intersection of artificial intelligence and music production.",
+      "amazon_link": "https://www.amazon.com/dummy/book3",
+      "cover_image": "https://via.placeholder.com/200x300"
+    },
+     {
+      "title": "Mobile App Design Principles",
+      "description": "Best practices for designing user-friendly mobile applications.",
+      "amazon_link": "https://www.amazon.com/dummy/book4",
+      "cover_image": "https://via.placeholder.com/200x300"
+    },
+     {
+      "title": "The Art of Self-Publishing",
+      "description": "A guide to publishing your own books on platforms like Amazon KDP.",
+      "amazon_link": "https://www.amazon.com/dummy/book5",
+      "cover_image": "https://via.placeholder.com/200x300"
+    },
+     {
+      "title": "Web Development Essentials",
+      "description": "Key concepts and technologies for building modern websites.",
+      "amazon_link": "https://www.amazon.com/dummy/book6",
+      "cover_image": "https://via.placeholder.com/200x300"
+    },
+     {
+      "title": "iOS Development with Swift",
+      "description": "Learn to build iOS apps using the Swift programming language.",
+      "amazon_link": "https://www.amazon.com/dummy/book7",
+      "cover_image": "https://via.placeholder.com/200x300"
+    },
+     {
+      "title": "Android Development with Kotlin",
+      "description": "A practical guide to creating Android apps with Kotlin.",
+      "amazon_link": "https://www.amazon.com/dummy/book8",
+      "cover_image": "https://via.placeholder.com/200x300"
+    },
+     {
+      "title": "Mastering Digital Marketing",
+      "description": "Strategies for promoting your work online.",
+      "amazon_link": "https://www.amazon.com/dummy/book9",
+      "cover_image": "https://via.placeholder.com/200x300"
+    },
+     {
+      "title": "The Future of AI",
+      "description": "An exploration of artificial intelligence and its potential impact.",
+      "amazon_link": "https://www.amazon.com/dummy/book10",
+      "cover_image": "https://via.placeholder.com/200x300"
+    }
+  ],
+  "music": [
+    {
+      "title": "AI Generated Ambient Track 1",
+      "description": "A calm and atmospheric piece generated by AI.",
+      "youtube_id": "dQw4w9WgXcQ" 
+    },
+     {
+      "title": "Upbeat AI Pop Song",
+      "description": "An energetic pop track created with AI tools.",
+      "youtube_id": "dQw4w9WgXcQ"
+    },
+     {
+      "title": "Experimental AI Soundscape",
+      "description": "An abstract sonic experience generated by artificial intelligence.",
+      "youtube_id": "dQw4w9WgXcQ"
+    },
+     {
+      "title": "AI Driven Jazz Improvisation",
+      "description": "A jazz piece featuring AI-generated improvisational elements.",
+      "youtube_id": "dQw4w9WgXcQ"
+    },
+     {
+      "title": "Relaxing AI Piano Melody",
+      "description": "A soothing piano melody composed with the help of AI.",
+      "youtube_id": "dQw4w9WgXcQ"
+    },
+     {
+      "title": "Cinematic AI Score Sample",
+      "description": "A dramatic and epic piece suitable for film scores.",
+      "youtube_id": "dQw4w9WgXcQ"
+    },
+     {
+      "title": "AI Produced Electronic Dance Track",
+      "description": "A high-energy electronic track generated by AI.",
+      "youtube_id": "dQw4w9WgXcQ"
+    },
+     {
+      "title": "AI Folk Ballad",
+      "description": "A heartfelt folk song with AI-generated lyrics and melody.",
+      "youtube_id": "dQw4w9WgXcQ"
+    },
+     {
+      "title": "AI Orchestrated Classical Piece",
+      "description": "A classical style composition orchestrated by artificial intelligence.",
+      "youtube_id": "dQw4w9WgXcQ"
+    },
+     {
+      "title": "AI Generated Hip Hop Beat",
+      "description": "A catchy hip hop beat produced using AI tools.",
+      "youtube_id": "dQw4w9WgXcQ"
+    }
+  ]
+} 
