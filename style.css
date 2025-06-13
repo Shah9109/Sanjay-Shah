@@ -4,10 +4,10 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url('background.png');
+    background-image: url('background.svg'); /* Using the provided SVG as background */
     background-size: cover;
+    background-position: center center;
     background-attachment: fixed; /* Makes background fixed while content scrolls */
-    background-position: center;
     color: #333; /* Dark grey text */
 }
 
@@ -20,7 +20,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #007bff; /* Blue links */
+    color: #007bff; /* Blue links - keeping text color */
 }
 
 a:hover {
@@ -29,7 +29,8 @@ a:hover {
 
 /* Header and Navigation */
 header {
-    background-color: #fff; /* White background */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    backdrop-filter: blur(5px); /* Adds a blur effect to the background */
     padding: 10px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     position: fixed;
@@ -62,16 +63,24 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #333;
+    color: #333; /* Keeping text color */
     font-weight: bold;
+}
+
+nav ul li a.active {
+    color: #007bff; /* Highlight active page in navigation */
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 3px;
 }
 
 /* Hero Section */
 .hero {
     padding-top: 100px; /* Space for fixed header */
-    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
-    color: #fff;
+    /* background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */ */
+    color: #333; /* Adjust hero text color for pastel background */
     text-align: center;
+    background-color: rgba(255, 242, 235, 0.7); /* Using a semi-transparent second color */
+    padding-bottom: 40px;
 }
 
 .hero .container {
@@ -84,19 +93,20 @@ nav ul li a {
     width: 150px;
     height: 150px;
     border-radius: 50%; /* Circular photo */
-    border: 5px solid #fff;
+    border: 5px solid rgb(255, 214, 186); /* Using a pastel color for border */
     margin-bottom: 20px;
 }
 
 .bio h1 {
     margin-top: 0;
     font-size: 2.5em;
+    color: #333; /* Keeping text color */
 }
 
 .bio h2 {
     margin-top: 0;
     font-size: 1.5em;
-    color: #ddd;
+    color: #555; /* Slightly darker text for subtitle */
 }
 
 .bio p {
@@ -104,28 +114,61 @@ nav ul li a {
     line-height: 1.6;
     max-width: 800px;
     margin: 20px auto;
+     color: #333; /* Keeping text color */
 }
 
 .social-links a {
-    color: #fff;
+    color: #333; /* Adjust social icon color for pastel background */
     margin: 0 10px;
     font-size: 1.8em;
     transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-    color: #007bff; /* Highlight on hover */
+    color: rgb(255, 214, 186); /* Highlight on hover with a pastel color */
 }
 
 /* Portfolio Sections */
 .portfolio-section {
     padding: 60px 0;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+    backdrop-filter: blur(3px); /* Subtle blur effect */
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px 0; /* Add some margin between sections */
+}
+
+/* Page Section - for individual pages */
+.page-section {
+    padding-top: 120px; /* Extra padding to account for fixed header */
+    min-height: calc(100vh - 200px); /* Ensure page fills most of the viewport */
+    background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white background */
+    backdrop-filter: blur(3px); /* Subtle blur effect */
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(200, 200, 255, 0.3);
+}
+
+/* Loading and Error Messages */
+.loading, .error-message {
+    padding: 30px;
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+    margin: 20px auto;
+    max-width: 80%;
+    border: 1px solid rgba(200, 200, 255, 0.4);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .portfolio-section h2 {
     font-size: 2em;
     margin-bottom: 40px;
+     color: #333; /* Keeping text color */
 }
 
 .project-grid {
@@ -135,21 +178,63 @@ nav ul li a {
 }
 
 .project-card {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(200, 200, 255, 0.5); /* Subtle border color to match background */
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    border-color: rgba(180, 180, 255, 0.8);
+}
+
+/* Featured card for home page */
+.featured-card {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* More opaque background for featured cards */
+    border: 1px solid rgba(200, 200, 255, 0.6); /* Subtle border matching theme */
+    box-shadow: 0 4px 12px rgba(100, 100, 255, 0.1); /* Subtle shadow with theme color */
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* View All button */
+.view-all-btn {
+    display: inline-block;
+    background-color: rgba(100, 100, 255, 0.8); /* Semi-transparent blue button */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: all 0.3s;
+    backdrop-filter: blur(3px); /* Subtle blur effect */
+    border: 1px solid rgba(150, 150, 255, 0.5); /* Subtle border */
+    font-weight: bold;
+}
+
+.view-all-btn:hover {
+    background-color: rgba(80, 80, 255, 0.9); /* More opaque on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 4px 8px rgba(100, 100, 255, 0.3); /* Shadow on hover */
+    text-decoration: none;
 }
 
 .project-card:hover {
     transform: translateY(-10px); /* Subtle lift on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
 }
 
 .project-card h3 {
     margin-top: 0;
     font-size: 1.3em;
+     color: #333; /* Keeping text color */
 }
 
 .project-card img {
@@ -157,35 +242,43 @@ nav ul li a {
     height: auto;
     border-radius: 4px;
     margin-bottom: 15px;
+     border: 1px solid rgb(255, 214, 186); /* Using a pastel color for border */
 }
 
 .project-card p {
     font-size: 1em;
     line-height: 1.5;
     margin-bottom: 15px;
+     color: #333; /* Keeping text color */
 }
 
 .project-card a {
     display: inline-block;
     margin-top: 10px;
-    color: #007bff;
+    color: #333; /* Adjust link color */
+    font-weight: bold;
+}
+
+.project-card a:hover {
+     color: rgb(255, 214, 186); /* Highlight on hover with a pastel color */
 }
 
 .project-card .upload-btn {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: rgb(255, 214, 186); /* Using a pastel color for button */
+    color: #333; /* Adjust button text color */
     border: none;
     border-radius: 4px;
     cursor: pointer;
     margin-top: 15px;
     transition: background-color 0.3s ease;
+     font-weight: bold;
 }
 
 .project-card .upload-btn:hover {
-    background-color: #0056b3;
+    background-color: rgb(255, 220, 220); /* Highlight on hover with a pastel color */
 }
 
 .music-card .video-placeholder {
@@ -193,6 +286,9 @@ nav ul li a {
     width: 100%;
     padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
     margin-bottom: 15px;
+     border: 1px solid rgb(255, 214, 186); /* Using a pastel color for border */
+      border-radius: 4px;
+      overflow: hidden; /* Ensures border radius is applied to iframe */
 }
 
 .music-card .video-placeholder iframe {
@@ -201,19 +297,20 @@ nav ul li a {
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 4px;
+    border: none; /* Remove iframe default border */
 }
 
 /* Contact Section */
 .contact-section {
     padding: 60px 0;
-    background-color: #f9f9f9; /* Slightly different background */
+    background-color: rgb(255, 242, 235); /* Using the second pastel color */
 }
 
 .contact-section h2 {
      font-size: 2em;
     margin-bottom: 40px;
     text-align: center;
+     color: #333; /* Keeping text color */
 }
 
 .contact-content {
@@ -225,10 +322,11 @@ nav ul li a {
 
 .contact-content form {
     flex: 1 1 400px; /* Allow form to grow and shrink */
-    background-color: #fff;
+    background-color: rgb(255, 232, 205); /* Using the third pastel color */
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     border: 1px solid rgb(255, 214, 186); /* Using a pastel color for border */
 }
 
 .form-group {
@@ -240,44 +338,50 @@ nav ul li a {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
+     color: #333; /* Keeping text color */
 }
 
 .form-group input, .form-group textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(255, 214, 186); /* Using a pastel color for border */
     border-radius: 4px;
     box-sizing: border-box; /* Include padding in width */
+     background-color: rgb(255, 242, 235); /* Using a lighter pastel color for input background */
+     color: #333; /* Keeping text color */
 }
 
 .btn-submit {
     display: inline-block;
     padding: 12px 25px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: rgb(255, 214, 186); /* Using a pastel color for button */
+    color: #333; /* Adjust button text color */
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 1.1em;
     transition: background-color 0.3s ease;
+     font-weight: bold;
 }
 
 .btn-submit:hover {
-    background-color: #0056b3;
+    background-color: rgb(255, 220, 220); /* Highlight on hover with a pastel color */
 }
 
 .contact-info {
     flex: 1 1 300px; /* Allow contact info to grow and shrink */
-    background-color: #fff;
+    background-color: rgb(255, 232, 205); /* Using the third pastel color */
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: left;
+     border: 1px solid rgb(255, 214, 186); /* Using a pastel color for border */
 }
 
 .contact-info p {
     margin-top: 0;
     font-size: 1.1em;
+     color: #333; /* Keeping text color */
 }
 
 .contact-info .social-links {
@@ -285,31 +389,33 @@ nav ul li a {
 }
 
 .contact-info .social-links a {
-    color: #333; /* Darker icons in contact section */
+    color: #333; /* Adjust social icon color */
     margin: 0 10px 0 0; /* Adjust spacing */
     font-size: 1.5em;
 }
 
 .contact-info .social-links a:hover {
-    color: #007bff;
+    color: rgb(255, 214, 186); /* Highlight on hover with a pastel color */
 }
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    backdrop-filter: blur(5px); /* Adds a blur effect to the background */
     padding: 20px 0;
+    text-align: center;
+    color: #333;
+    border-top: 1px solid rgba(200, 200, 255, 0.5); /* Subtle border to match the theme */
 }
 
 .footer-links a {
-    color: #fff;
+    color: #333; /* Adjust social icon color */
     margin: 0 10px;
     font-size: 1.5em;
 }
 
 .footer-links a:hover {
-    color: #007bff;
+    color: rgb(255, 214, 186); /* Highlight on hover with a pastel color */
 }
 
 /* Responsiveness */
@@ -341,4 +447,4 @@ footer {
     .contact-content {
         flex-direction: column;
     }
-} 
+}

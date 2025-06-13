@@ -1,4 +1,4 @@
-// Smooth scrolling for navigation links
+// Smooth scrolling only for contact link on home page
 document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -9,94 +9,80 @@ document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Function to fetch and display data
+// Function to fetch and display data for the home page
 async function loadPortfolioData() {
     try {
-        const response = await fetch('data.json');
-        const data = await response.json();
-
-        // Populate Web Development Section
-        const webDevGrid = document.querySelector('#web-development .project-grid');
-        webDevGrid.innerHTML = ''; // Clear placeholders
-        data.web_development.forEach(project => {
-            const card = `
-                <div class="project-card">
-                    <h3>${project.title}</h3>
-                    <img src="${project.image}" alt="${project.title} Screenshot">
-                    <p>${project.description}</p>
-                    <a href="${project.link}" target="_blank">View Project or GitHub</a>
-                    <button class="upload-btn">Upload Screenshot (Placeholder)</button>
-                </div>
-            `;
-            webDevGrid.innerHTML += card;
-        });
-
-        // Populate iOS Development Section
-        const iosDevGrid = document.querySelector('#ios-development .project-grid');
-        iosDevGrid.innerHTML = ''; // Clear placeholders
-        data.ios_development.forEach(app => {
-            const card = `
-                <div class="project-card">
-                    <h3>${app.name}</h3>
-                     <img src="${app.image}" alt="${app.name} Screenshot">
-                    <p>${app.description}</p>
-                    <a href="${app.link}" target="_blank">App Store or GitHub</a>
-                    <button class="upload-btn">Upload Screenshot (Placeholder)</button>
-                </div>
-            `;
-            iosDevGrid.innerHTML += card;
-        });
-
-         // Populate Android Development Section
-        const androidDevGrid = document.querySelector('#android-development .project-grid');
-        androidDevGrid.innerHTML = ''; // Clear placeholders
-        data.android_development.forEach(app => {
-            const card = `
-                <div class="project-card">
-                    <h3>${app.name}</h3>
-                     <img src="${app.image}" alt="${app.name} Screenshot">
-                    <p>${app.description}</p>
-                    <a href="${app.link}" target="_blank">Play Store or GitHub</a>
-                    <button class="upload-btn">Upload Screenshot (Placeholder)</button>
-                </div>
-            `;
-            androidDevGrid.innerHTML += card;
-        });
-
-        // Populate Books Section
-        const booksGrid = document.querySelector('#books .project-grid');
-        booksGrid.innerHTML = ''; // Clear placeholders
-        data.books.forEach(book => {
-            const card = `
-                <div class="project-card">
-                    <h3>${book.title}</h3>
-                    <img src="${book.cover_image}" alt="${book.title} Cover">
-                    <p>${book.description}</p>
-                    <a href="${book.amazon_link}" target="_blank">View on Amazon</a>
-                     <button class="upload-btn">Upload Cover Image (Placeholder)</button>
-                </div>
-            `;
-            booksGrid.innerHTML += card;
-        });
-
-        // Populate Music Section
-        const musicGrid = document.querySelector('#music .project-grid');
-        musicGrid.innerHTML = ''; // Clear placeholders
-        data.music.forEach(song => {
-            const card = `
-                <div class="project-card music-card">
-                    <h3>${song.title}</h3>
-                    <p>${song.description}</p>
-                     <div class="video-placeholder">
-                         <iframe src="https://www.youtube.com/embed/${song.youtube_id}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </div>
-            `;
-            musicGrid.innerHTML += card;
-        });
-
+        // For the home page, we don't need to load all the project data
+        // Instead, we'll add buttons to view more projects on each section
+        
+        // Add "View All Projects" buttons to each section
+        addViewAllButtons();
+        
     } catch (error) {
         console.error('Error loading portfolio data:', error);
+    }
+}
+
+// Function to add "View All" buttons to each portfolio section
+function addViewAllButtons() {
+    // Web Development section
+    const webDevGrid = document.querySelector('#web-development .project-grid');
+    if (webDevGrid) {
+        webDevGrid.innerHTML = `
+            <div class="project-card featured-card">
+                <h3>Web Development Projects</h3>
+                <p>Explore my collection of web development projects including e-commerce platforms, responsive websites, and interactive web applications.</p>
+                <a href="web-development.html" class="view-all-btn">View All Web Projects</a>
+            </div>
+        `;
+    }
+    
+    // iOS Development section
+    const iosDevGrid = document.querySelector('#ios-development .project-grid');
+    if (iosDevGrid) {
+        iosDevGrid.innerHTML = `
+            <div class="project-card featured-card">
+                <h3>iOS Development Projects</h3>
+                <p>Discover my iOS applications built with Swift and UIKit, ranging from utility apps to complex solutions.</p>
+                <a href="ios-development.html" class="view-all-btn">View All iOS Projects</a>
+            </div>
+        `;
+    }
+    
+    // Android Development section
+    const androidDevGrid = document.querySelector('#android-development .project-grid');
+    if (androidDevGrid) {
+        androidDevGrid.innerHTML = `
+            <div class="project-card featured-card">
+                <h3>Android Development Projects</h3>
+                <p>Browse through my Android applications created with Kotlin and Java, showcasing various functionalities and designs.</p>
+                <a href="android-development.html" class="view-all-btn">View All Android Projects</a>
+            </div>
+        `;
+    }
+    
+    // Books section
+    const booksGrid = document.querySelector('#books .project-grid');
+    if (booksGrid) {
+        booksGrid.innerHTML = `
+            <div class="project-card featured-card">
+                <h3>Published Books</h3>
+                <p>Check out my published books covering various topics from technology to fiction.</p>
+                <a href="books.html" class="view-all-btn">View All Books</a>
+            </div>
+        `;
+    }
+    
+    // Music section
+    const musicGrid = document.querySelector('#music .project-grid');
+    if (musicGrid) {
+        musicGrid.innerHTML = `
+            <div class="project-card featured-card music-card">
+                <h3>Music Creations</h3>
+                <p>Listen to my AI-generated music compositions and original tracks.</p>
+                <a href="music.html" class="view-all-btn">View All Music</a>
+            </div>
+        `;
     }
 }
 
@@ -111,4 +97,4 @@ if (contactForm) {
         alert('Form submitted! (This is a placeholder. Backend needed to send email.)');
         // In a real application, you would send the form data to a backend script here
     });
-} 
+}
