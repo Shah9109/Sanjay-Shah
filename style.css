@@ -90,8 +90,13 @@ nav ul li a.active {
 }
 
 .profile-photo img {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%; /* This creates a circular image, remove if you want square */
+    border: 3px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
     border-radius: 50%; /* Circular photo */
     border: 5px solid rgb(255, 214, 186); /* Using a pastel color for border */
     margin-bottom: 20px;

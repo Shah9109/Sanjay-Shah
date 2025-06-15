@@ -2,9 +2,9 @@
   "web_development": [
     {
       "title": "E-commerce Platform",
-      "description": "A fully functional e-commerce website built with React and Node.js.",
-      "link": "https://github.com/dummy/ecommerce-project",
-      "image": "https://via.placeholder.com/400x300"
+      "description": "A fully  Node.js.",
+      "link": "https://github.com/Shah9109/ecomerce-web.git",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjyFDX1BFIp8OhhWyvjP-QpWZlt3U5XCAIJA&s"
     },
     {
       "title": "Task Management App",
@@ -187,116 +187,117 @@
   ],
   "books": [
     {
-      "title": "The Enigma of Eldoria",
+      "title": "Manifest Anything: How Your Words Shape Your Life and Unlock Success",
       "description": "A fantasy novel set in a world of magic and mystery.",
-      "amazon_link": "https://www.amazon.com/dummy/book1",
-      "cover_image": "https://via.placeholder.com/200x300"
+      "amazon_link": "https://a.co/d/7JxqB3I",
+      "cover_image": "https://m.media-amazon.com/images/I/81hq-SQREbL._SY522_.jpg"
     },
      {
-      "title": "Coding for Beginners",
-      "description": "An introductory guide to programming for absolute beginners.",
-      "amazon_link": "https://www.amazon.com/dummy/book2",
-      "cover_image": "https://via.placeholder.com/200x300"
+      "title": "Ayurveda & BREATH - ADVANCED Secrets",
+      "description": "Unlock the Hidden Power of Breath through the Ancient Wisdom of Ayurveda.",
+      "amazon_link": "https://a.co/d/3trAKDE",
+      "cover_image": "https://m.media-amazon.com/images/I/71NrvwKVpFL._SY522_.jpg"
     },
      {
-      "title": "AI Music Creation",
-      "description": "Exploring the intersection of artificial intelligence and music production.",
-      "amazon_link": "https://www.amazon.com/dummy/book3",
-      "cover_image": "https://via.placeholder.com/200x300"
+      "title": "Ayurvedic Ancient Wisdom, Modern Healing, Preventive and Curative Approach ",
+      "description": "Unlock the secrets of Ayurveda, the timeless science of natural healing, and learn how to apply ",
+      "amazon_link": "https://a.co/d/ebwZdVg",
+      "cover_image": "https://m.media-amazon.com/images/I/81CqW9GRyoL._SY522_.jpg"
     },
      {
-      "title": "Mobile App Design Principles",
-      "description": "Best practices for designing user-friendly mobile applications.",
-      "amazon_link": "https://www.amazon.com/dummy/book4",
-      "cover_image": "https://via.placeholder.com/200x300"
+      "title": "3 Hidden Secrets of AURA Revealed for Powerful Protection: Secrets of AURA",
+      "description": "Discover the hidden power that surrounds you. In 3 Hidden Secrets of AURA Revealed for Powerful Protection, ",
+      "amazon_link": "https://a.co/d/46NDFxq",
+      "cover_image": "https://m.media-amazon.com/images/I/71+LnjLllJL._SY522_.jpg"
     },
      {
-      "title": "The Art of Self-Publishing",
-      "description": "A guide to publishing your own books on platforms like Amazon KDP.",
-      "amazon_link": "https://www.amazon.com/dummy/book5",
-      "cover_image": "https://via.placeholder.com/200x300"
+      "title": "Decode the Face: Unlocking Destiny Through Samudrika Shastra: Easy Face Reading",
+      "description": "Easy Face Reading: Discover What Your Face Says About You is your step-by-step beginner’s ",
+      "amazon_link": "https://a.co/d/2PlXwUp",
+      "cover_image": "https://m.media-amazon.com/images/I/710Wq6as5aL._SY522_.jpg"
     },
      {
-      "title": "Web Development Essentials",
-      "description": "Key concepts and technologies for building modern websites.",
-      "amazon_link": "https://www.amazon.com/dummy/book6",
-      "cover_image": "https://via.placeholder.com/200x300"
+      "title": "Panchakosha in Yoga Sadhana: Understanding the Five Sheaths (Part I): Yoga Sadhana",
+      "description": "Unlock the ancient yogic map to holistic wellbeing with this definitive guide to the Panchakosha model—the five interlocking",
+      "amazon_link": "https://a.co/d/5FuaT2X",
+      "cover_image": "https://m.media-amazon.com/images/I/71JOzBOZ3FL._SY522_.jpg"
     },
      {
-      "title": "iOS Development with Swift",
-      "description": "Learn to build iOS apps using the Swift programming language.",
-      "amazon_link": "https://www.amazon.com/dummy/book7",
-      "cover_image": "https://via.placeholder.com/200x300"
+      "title": "3 Breaths to Master Your Mind: तीन श्वासों में मन नियंत्रण",
+      "description": "Unlock the transformative power within you through the ancient science of breath and the stillness of mind.In Breath, Mind,",
+      "amazon_link": "https://a.co/d/2jwAH6q",
+      "cover_image": "https://m.media-amazon.com/images/I/81xMERr2I2L._SY522_.jpg"
     },
      {
-      "title": "Android Development with Kotlin",
-      "description": "A practical guide to creating Android apps with Kotlin.",
-      "amazon_link": "https://www.amazon.com/dummy/book8",
-      "cover_image": "https://via.placeholder.com/200x300"
+      "title": "Leadership Dominace: & Crown of Command ",
+      "description": "The Leadership Supremacy Blueprint is a transformative guide designed for those who aspire to lead with purpose, influence",
+      "amazon_link": "https://a.co/d/4wOJ9Nj",
+      "cover_image": "https://m.media-amazon.com/images/I/71dA82I3y5L._SY522_.jpg"
     },
      {
-      "title": "Mastering Digital Marketing",
-      "description": "Strategies for promoting your work online.",
-      "amazon_link": "https://www.amazon.com/dummy/book9",
-      "cover_image": "https://via.placeholder.com/200x300"
+      "title": "How to become women",
+      "description": "This book explores the unique journey of the female brain, from conception to old age, uncovering the profound effects of ",
+      "amazon_link": "https://a.co/d/gRsyzy0",
+      "cover_image": "https://m.media-amazon.com/images/I/61vKMRmm3DL._SY522_.jpg"
     },
      {
-      "title": "The Future of AI",
-      "description": "An exploration of artificial intelligence and its potential impact.",
-      "amazon_link": "https://www.amazon.com/dummy/book10",
-      "cover_image": "https://via.placeholder.com/200x300"
+      "title": "Swar Vigyan Secrets: Breathing Manifesting",
+      "description": "Master the art of conscious breathing with Swar Vigyan: The Science of Breath. This transformative guide delves into the ",
+      "amazon_link": "https://a.co/d/5m6ued2",
+      "cover_image": "https://m.media-amazon.com/images/I/616ZwWT9nUL._SY522_.jpg"
     }
   ],
   "music": [
     {
-      "title": "AI Generated Ambient Track 1",
-      "description": "A calm and atmospheric piece generated by AI.",
-      "youtube_id": "dQw4w9WgXcQ" 
+      "title": "Ishq Mera(Official Music Video): Jubin Nautiyal(New version)",
+      "description": "Presenting the Song 'Ishq Mera' by Jubin Nautiyal, composed by Akashdeep Sengupta and penned by Mukund Suryawanshi..",
+      "youtube_id": "RjHwKcHPKQw" 
     },
      {
-      "title": "Upbeat AI Pop Song",
-      "description": "An energetic pop track created with AI tools.",
-      "youtube_id": "dQw4w9WgXcQ"
+      "title": "Tu Saath Hai Toh (Full Audio): Mithoon, Vishal Mishra (Another version female cover )",
+      "description": "Presenting the Full Audio Song from the Album Master of Melody. Sung by Vishal Mishra, composed by Mithoon and",
+      "youtube_id": "I_r7kJSkqtg"
+      
     },
      {
-      "title": "Experimental AI Soundscape",
-      "description": "An abstract sonic experience generated by artificial intelligence.",
-      "youtube_id": "dQw4w9WgXcQ"
+      "title": "Koi Naa | Bhool Chuk Maaf Cover song !",
+      "description": "Koi Naa | Bhool Chuk Maaf | Rajkummar Rao, Wamiqa Gabbi | Tanishk, Irshad, Shreya, Harnoor, Gifty",
+      "youtube_id": "KEqB5NBgfN4"
     },
      {
-      "title": "AI Driven Jazz Improvisation",
-      "description": "A jazz piece featuring AI-generated improvisational elements.",
-      "youtube_id": "dQw4w9WgXcQ"
+      "title": "Radha rani krishan ki pyari Official song 2025",
+      "description": "राधा रानी श्रीकृष्ण की प्यारी | Official song | 2025  Radha Rani Bhajan",
+      "youtube_id": "PfIyXaaa1tI"
     },
      {
-      "title": "Relaxing AI Piano Melody",
-      "description": "A soothing piano melody composed with the help of AI.",
-      "youtube_id": "dQw4w9WgXcQ"
+      "title": "Ranjheya Ve | Tere Naal Main Maraangi Ranjheya Ve | Cover song",
+      "description": "Ranjheya Ve  | Tere Naal Main Maraangi Ranjheya Ve | Cover song",
+      "youtube_id": "KeaADYVgcy0"
     },
      {
-      "title": "Cinematic AI Score Sample",
-      "description": "A dramatic and epic piece suitable for film scores.",
-      "youtube_id": "dQw4w9WgXcQ"
+      "title": "Naruto Hindi Song | 🔥[AMV] - Blue Bird",
+      "description": "🎤 Powerful vocals, 💥 intense lyrics inspired by Naruto’s story,  🌪️ If you've ever said — “I won’t give up!”",
+      "youtube_id": "b1TReGqo6h4"
     },
      {
-      "title": "AI Produced Electronic Dance Track",
-      "description": "A high-energy electronic track generated by AI.",
-      "youtube_id": "dQw4w9WgXcQ"
+      "title": "48 Rhymes (Another version) Karan Aujla Manna Music | New Punjabi Song 2025",
+      "description": "48 Rhymes (Another version) Karan Aujla Manna Music | New Punjabi Song 2025 Punjabi Song 2025, Aujla",
+      "youtube_id": "mPBCoBwruJ8"
     },
      {
-      "title": "AI Folk Ballad",
-      "description": "A heartfelt folk song with AI-generated lyrics and melody.",
-      "youtube_id": "dQw4w9WgXcQ"
+      "title": "Hindi version of APT Thailand  | Culik Aku | New version",
+      "description": "Hindi version of APT Thailand  ",
+      "youtube_id": "lU-PJ9V51No"
     },
      {
-      "title": "AI Orchestrated Classical Piece",
-      "description": "A classical style composition orchestrated by artificial intelligence.",
-      "youtube_id": "dQw4w9WgXcQ"
+      "title": "Mere dil ki Dhadkan ho tum | new song | official 2025",
+      "description": "Mere dil ki Dhadkan ho tum | new song | official 2025 songs2025 #romanticsong #song #music #lovesong #",
+      "youtube_id": "P2l6zs3ePE8"
     },
      {
-      "title": "AI Generated Hip Hop Beat",
-      "description": "A catchy hip hop beat produced using AI tools.",
-      "youtube_id": "dQw4w9WgXcQ"
+      "title": "Channa Mereya (English Translation)Official song  | Soulful Female Cover | Ae Dil Hai Mushkil",
+      "description": "Sing along to the soulful Channa Mereya. Lyrics have been beautifully crafted by Amitabh Bhattacharya",
+      "youtube_id": "27CKwm94lho"
     }
   ]
 } 
