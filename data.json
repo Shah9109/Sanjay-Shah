@@ -1,146 +1,149 @@
 {
   "web_development": [
     {
-      "title": "E-commerce Platform",
-      "description": "A fully  Node.js.",
+      "title": "SoleSpark! 👟✨",
+      "description": "🚀 A modern, animated, responsive e-commerce website designed for eco-conscious footwear lovers. Features intuitive UI/UX, fully responsive layout, smooth animations, dynamic product navigation, and built with sustainability in mind. Tech Stack: HTML5, CSS3, JavaScript, Font Awesome, Google Fonts.",
       "link": "https://github.com/Shah9109/ecomerce-web.git",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjyFDX1BFIp8OhhWyvjP-QpWZlt3U5XCAIJA&s"
-    },
-    {
-      "title": "Task Management App",
-      "description": "A simple to-do list application using vanilla JavaScript.",
-      "link": "https://github.com/dummy/todo-app",
-      "image": "https://via.placeholder.com/400x300"
-    },
-    {
-      "title": "Blog Platform",
-      "description": "A responsive blog site with a simple CMS backend.",
-      "link": "https://github.com/dummy/blog-platform",
-      "image": "https://via.placeholder.com/400x300"
+      "youtube_id": "zlu3Gm5_l9w"
     },
      {
-      "title": "Weather Dashboard",
-      "description": "Displays current weather information using a third-party API.",
-      "link": "https://github.com/dummy/weather-dashboard",
-      "image": "https://via.placeholder.com/400x300"
+      "title": " RemotWork – A Modern Freelancing Platform!",
+      "description": "🎨 Welcome to my creative portfolio! A modern, responsive showcase built with React and Tailwind CSS featuring my work across web development, iOS apps, and creative projects. Includes animated project cards, filterable galleries, dark mode support, and seamless navigation. The clean, minimalist design puts the focus on the work while demonstrating my full-stack development capabilities.",
+      "link": "https://github.com/Shah9109/RemoteWork-web-",
+      "youtube_id": "ACz50k8t-_U"
+    },
+    {
+      "title": "🌸 Just Launched: Bloom & Blossom! 💐✨",
+      "description": "🌸 I'm thrilled to introduce my latest web project — a modern, responsive flower shop website built for seamless beauty and joyful user experiences. Features include elegant UI/UX with smooth scroll animations, responsive design for mobile & desktop, interactive gallery with Lightbox functionality, cart system with local storage, WhatsApp Integration for instant support. Built with HTML5, CSS3, Vanilla JS, and enhanced with AOS, Swiper, Lightbox, Font Awesome, and Google Fonts. A project crafted with care for clean design and optimal web performance.",
+
+      "link": "https://github.com/Shah9109/flower-web",
+      "youtube_id": "CbeoYG4q85o"
+      
+    },
+    {
+      "title": " Eduu – A Modern Online Learning Platform ",
+      "description": "🚀 Introducing Eduu - A cutting-edge e-learning platform built with React 18, Vite & Tailwind CSS! Features include dynamic course catalog spanning Web Dev to Cybersecurity, user authentication, dark mode, and stunning Framer Motion animations. Explore courses through an intuitive UI with modern gradients, floating elements, and optimized performance. Tech stack: React, Vite, Tailwind CSS, Framer Motion, Heroicons & React Router. Ready to transform online education! 🎓✨",
+      "link": "https://github.com/Shah9109/Eduu-app-web",
+      "youtube_id": "zcju9-UYu5w"
     },
      {
-      "title": "Quiz Application",
-      "description": "An interactive quiz with multiple categories and difficulty levels.",
-      "link": "https://github.com/dummy/quiz-app",
-      "image": "https://via.placeholder.com/400x300"
+      "title": "Frontend Masters platform! 🔥",
+      "description": "🔥 I'm thrilled to share my latest project — a responsive, interactive clone of the Frontend Masters platform! Built with pure HTML, CSS & JavaScript, this project features real-time course filtering, smooth animations, interactive learning paths, responsive design, and comprehensive components including teacher cards, hero section, and testimonials. Leveraging modern CSS Grid, Flexbox, and ES6+ JavaScript, this project demonstrates my ability to craft professional, elegant UIs without frameworks. Tech Stack: HTML5, CSS3, Vanilla JavaScript, SVG.",
+      "link": "https://github.com/Shah9109/Mastered-Frontend",
+      "youtube_id": "1Fb8TKnDUII"
+    },
+     {
+      "title": "Mothers Everywhere 💐 Bloging web app",
+      "description": "🚀 New Project Launched! 💐 A Heartfelt Tribute to Mothers Everywhere - A Mother's Day Tribute Blog built using Next.js 14, TypeScript, and Tailwind CSS. This platform celebrates incredible stories of mothers worldwide with features like dynamic search, category filtering, carousel hero sections, and real-time interactions. Built with Next.js App Router, Tailwind CSS for responsive design, Lucide Icons, and Next/Image for optimized visuals. Every element designed with love and purpose to honor mothers everywhere. ❤️",
+      "link": "https://github.com/Shah9109/My-Mom-Blog-web-app",
+      "youtube_id": "W0-lmMVUcIU"
+    },
+     {
+      "title": "eCommerce Website! 🛍️ LUXE",
+      "description": "🚀 Excited to share my latest eCommerce project - a fully responsive online store built from scratch! Features modern UI/UX design, smooth product browsing, secure checkout system with integrated payment gateway, and comprehensive admin dashboard for inventory and order management. Built with performance and user engagement in mind, showcasing my full-stack development skills in creating intuitive online shopping experiences. Tech stack includes modern web technologies focused on scalability and security.",
+      "link": "https://github.com/Shah9109/LUXE",
+     "youtube_id": "eowpw2WW_fw"
+    },
+     {
+      "title": "eCommerce Website! 🛍️ Eshop",
+      "description": "🚀 Excited to share my latest eCommerce project! Built from scratch with a focus on seamless user experience, this platform features a modern responsive design, intuitive product browsing, secure checkout system with integrated payments, and a comprehensive admin dashboard for inventory and order management. Demonstrates my full-stack development capabilities in creating engaging online shopping experiences. Tech stack includes modern web technologies optimized for performance and scalability.",
+      "link": "https://github.com/Shah9109/web-eecoo",
+     "youtube_id": "_z022uCy8b8"
     },
      {
       "title": "Portfolio Website",
-      "description": "The source code for this very portfolio site!",
-      "link": "https://github.com/dummy/portfolio-site",
-      "image": "https://via.placeholder.com/400x300"
+      "description": "🎨 Welcome to my creative portfolio! A modern, responsive showcase built with React and Tailwind CSS featuring my work across web development, iOS apps, and creative projects. Includes animated project cards, filterable galleries, dark mode support, and seamless navigation. The clean, minimalist design puts the focus on the work while demonstrating my full-stack development capabilities.",
+      "link": "https://github.com/Shah9109/portfolio",
+      "youtube_id": "6XKY0xK3zPw"
     },
-     {
-      "title": "Landing Page Template",
-      "description": "A clean and modern landing page designed with Bootstrap.",
-      "link": "https://github.com/dummy/landing-page",
-      "image": "https://via.placeholder.com/400x300"
-    },
-     {
-      "title": "Calculator App",
-      "description": "A basic calculator with arithmetic operations.",
-      "link": "https://github.com/dummy/calculator-app",
-      "image": "https://via.placeholder.com/400x300"
-    },
-     {
-      "title": "Random Quote Generator",
-      "description": "Displays random quotes fetched from an API.",
-      "link": "https://github.com/dummy/quote-generator",
-      "image": "https://via.placeholder.com/400x300"
-    },
-     {
-      "title": "Image Gallery",
+    
+    {
+      "title": "Portfolio Website",
       "description": "A dynamic image gallery with filtering options.",
       "link": "https://github.com/dummy/image-gallery",
-      "image": "https://via.placeholder.com/400x300"
+      "youtube_id": "yunanaunGII"
     }
   ],
   "ios_development": [
     {
-      "name": "Notes App",
-      "description": "A simple note-taking application for iOS.",
-      "link": "https://github.com/dummy/ios-notes-app",
-      "image": "https://via.placeholder.com/300x500"
+      "name": "LinkedIn-Inspired iOS App",
+      "description": "A professional networking app for iOS inspired by LinkedIn, built with SwiftUI and MVVM architecture. Features include secure authentication, dynamic feed, real-time connections, messaging, job search, and comprehensive profile management.",
+      "link": "https://github.com/Shah9109/linkedIn",
+      "youtube_id": "jEuU_VNilnM"
     },
      {
-      "name": "Weather App",
-      "description": "Displays weather forecasts using a weather API.",
-      "link": "https://github.com/dummy/ios-weather-app",
-      "image": "https://via.placeholder.com/300x500"
+      "name": "Grocio -  iOS Grocery Delivery App",
+      "description": "After weeks of focused design and development, Grocio is a full-featured SwiftUI grocery delivery app inspired by Instamart and Zepto. Built with MVVM architecture, it features smart cart management, real-time order tracking, product filtering, animations, and Firebase integration. Includes smooth onboarding, category carousel, checkout flow, wishlist functionality, and dark mode support.",
+      "link": "https://github.com/Shah9109/Grocio",
+      "youtube_id": "yunanaunGII"
     },
      {
-      "name": "Calculator App",
-      "description": "A basic calculator application for iOS.",
-      "link": "https://github.com/dummy/ios-calculator",
-      "image": "https://via.placeholder.com/300x500"
+      "name": "Eststy 2.0, my latest SwiftUI-based iOS application",
+      "description": "I'm thrilled to share Eststy 2.0, my latest SwiftUI-based iOS application designed for modern, interactive, and scalable e-commerce experiences. Built with a modular MVVM architecture, it features comprehensive components for Home, Cart, Search, Profile, Seller Dashboard & Notifications. The app showcases a clean SwiftUI interface, iOS 15+ compatibility, and follows a structured approach with Models, Views, Components, and Store. Includes custom light/dark mode theming and is open for collaborations!",
+      "link": "https://github.com/Shah9109/Eststy-2.0",
+      "youtube_id": "CidVHfaiaCA"
     },
      {
-      "name": "To-Do List",
-      "description": "A task management app with reminders and due dates.",
-      "link": "https://github.com/dummy/ios-todo-list",
-      "image": "https://via.placeholder.com/300x500"
+      "name": " VeditX AI Studio  The Future of Video Editing for macOS",
+      "description": "🚀 A revolutionary macOS video editor powered by AI! Features modern glassmorphism UI, real-time timeline editing, live preview, and advanced AI tools including auto captions, voiceovers, scene detection, and background removal. Built natively with SwiftUI, AVFoundation, and cutting-edge AI integrations. Supports one-click export for social media and full project management.",
+      "link": "https://github.com/Shah9109/VeditX-AI-Studio-2.0",
+      "youtube_id": "3E2YTVlPq2I"
     },
      {
-      "name": "Recipe Finder",
-      "description": "Find and save recipes from online sources.",
-      "link": "https://github.com/dummy/ios-recipe-finder",
-      "image": "https://via.placeholder.com/300x500"
+      "name": "V Player for macOS",
+      "description": "🚀 Just Launched: V Player for macOS! A modern, SwiftUI-powered video player with stunning glassmorphism UI, supporting multiple formats (MP4, MKV, AVI, MOV), variable playback speeds, playlist management, and intuitive controls. Built with SwiftUI, AVFoundation and MVVM architecture for optimal performance.",
+      "link": "https://github.com/Shah9109/V-player",
+      "youtube_id": "SvPbeykIrrw"
     },
      {
-      "name": "Unit Converter",
-      "description": "Converts between various units of measurement.",
-      "link": "https://github.com/dummy/ios-unit-converter",
-      "image": "https://via.placeholder.com/300x500"
+      "name": "Affirmify – Daily Affirmations & Mindfulness App",
+      "description": "A beautiful and mindful iOS app featuring liquid glass UI with immersive blur effects, daily auto-updating affirmations with voice narration, guided breathing exercises, ambient music, and calming visuals. Built with SwiftUI and MVVM architecture, it includes favorites, progress tracking, and offline support.",
+      "link": "https://github.com/Shah9109/Affirmify",
+      "youtube_id": "hlQxtrWTsaA"
     },
      {
-      "name": "Photo Gallery",
-      "description": "Browse and organize photos on the device.",
-      "link": "https://github.com/dummy/ios-photo-gallery",
-      "image": "https://via.placeholder.com/300x500"
+      "name": " Food Gallery – A Fully Functional iOS Food Delivery App",
+      "description": "🚀 Just Launched: Food Gallery – A Fully Functional iOS Food Delivery App! Built with SwiftUI and MVVM architecture, featuring seamless authentication, real-time cart & checkout, order history, profile management, search filters, map view and more. Leverages iOS 16+ capabilities with modular components and stunning UI/UX. Tech stack includes SwiftUI, MVVM, @StateObject, @AppStorage, MapKit, and SF Symbols.",
+      "link": "https://github.com/Shah9109/Foodit",
+      "youtube_id": "NO4QFXD4zBE"
     },
      {
-      "name": "Music Player",
-      "description": "A simple music player app.",
-      "link": "https://github.com/dummy/ios-music-player",
-      "image": "https://via.placeholder.com/300x500"
+      "name": "Music Streaming App – Audora!",
+      "description": "🎶 A modern iOS music streaming app built with SwiftUI and AVFoundation. Features high-quality audio streaming, custom playlists, mood-based collections, dark/light mode support, and an intuitive interface. Integrates with Firebase for future artist uploads and music discovery. Perfect for music lovers and indie creators looking for a clean, powerful listening experience.",
+      "link": "https://github.com/Shah9109/music-streaming",
+      "youtube_id": "ZMxOgIIzHhg"
     },
      {
-      "name": "Drawing App",
-      "description": "A basic drawing application with different brush tools.",
-      "link": "https://github.com/dummy/ios-drawing-app",
-      "image": "https://via.placeholder.com/300x500"
+      "name": "ChatNest new social media app",
+      "description": "🚀 Introducing ChatNest - A next-generation social media platform built to foster authentic connections and empower digital creators. Features a stunning UI with rich colors, robust privacy controls, seamless content sharing, and unique community-building tools. Available for both iOS and Android, ChatNest creates a more personal and engaging social experience focused on genuine interaction and creative expression.",
+      "link": "https://github.com/Shah9109/chat-app",
+      "youtube_id": "KWKrJG5MIDA"
     },
      {
-      "name": "Expense Tracker",
-      "description": "Track and categorize daily expenses.",
-      "link": "https://github.com/dummy/ios-expense-tracker",
-      "image": "https://via.placeholder.com/300x500"
+      "name": "HerFit – Your Fashion & Style Companion",
+      "description": "👗✨ HerFit – Your Fashion & Style Companion, Now on iOS! 📱💄 A modern fashion & lifestyle iOS app designed exclusively for women who love to explore, express, and elevate their personal style. Built with SwiftUI and powered by a clean MVVM architecture, HerFit brings curated fashion trends, outfit suggestions based on season/occasion/mood, style boards, lookbook collections, wishlist features with interactive animations, trend articles, and a beautiful dark/light mode UI. Coming soon: AI-powered style recommendations and virtual wardrobe try-ons!",
+      "link": "https://github.com/Shah9109/HerFit",
+      "youtube_id": "upztrU-6Qwg"
     }
   ],
   "android_development": [
     {
-      "name": "Notes App",
-      "description": "A simple note-taking application for Android.",
-      "link": "https://github.com/dummy/android-notes-app",
-      "image": "https://via.placeholder.com/300x500"
+      "name": "My Modern Android Service App! 📱✨",
+      "description": "🚀 Just Launched: My Modern Android Service App! 📱✨ A Service Booking App built with Jetpack Compose featuring sleek UI, smooth animations, and a chat-inspired interface for managing professional services. Includes clean MVVM architecture, Hilt dependency injection, Material Design 3 with gradient UI and dark mode, modular components, and support for API integration, authentication, payment processing and real-time chat. Built with Kotlin, Navigation Compose, Coil for image loading, and Lottie for delightful animations.",
+      "link": "https://github.com/Shah9109/Service-Hub-Andro",
+       "youtube_id": "aI7GyGVa_sY"
     },
      {
-      "name": "Weather App",
-      "description": "Displays weather forecasts using a weather API.",
-      "link": "https://github.com/dummy/android-weather-app",
-      "image": "https://via.placeholder.com/300x500"
+      "name": "My New Spiritual Android App! 📱✨",
+      "description": "🌟 Excited to Announce My New Spiritual Android App! 📱🧘‍♂️ After months of dedication, design, and divine inspiration, I've launched a Spiritual Android Application aimed at helping individuals reconnect with inner peace, higher consciousness, and ancient wisdom. Features include guided meditations, soulful music & mantras, spiritual books & teachings, community group chats, live video satsangs & events, and daily spiritual reminders & affirmations. Built with Kotlin, Firebase, Jetpack Compose with Clean UI, designed to create a peaceful experience. Making spirituality accessible, simple and modern for everyone's inner transformation journey. 🙏",
+      "link": "https://github.com/Shah9109/Jaigurudev-App",
+       "youtube_id": "aLnNAc-Jf3g"
     },
      {
-      "name": "Calculator App",
-      "description": "A basic calculator application for Android.",
-      "link": "https://github.com/dummy/android-calculator",
-      "image": "https://via.placeholder.com/300x500"
+      "name": "Upedge App",
+      "description": "🚀 Introducing UpEdge – A Modern Educational Android App Built with Jetpack Compose! 🎓📱 A powerful and elegant educational platform designed to redefine mobile learning with features like video course playback (ExoPlayer), interactive quizzes, progress tracking, Firebase authentication, dark mode, and real-time notifications. Built with MVVM architecture, Hilt DI, Room Database, and Firebase backend. Demonstrates modern Android development best practices while making education more accessible and engaging.",
+      "link": "https://github.com/Shah9109/Upedge",
+       "youtube_id": "iBuAWlpLa_4"
     },
      {
       "name": "To-Do List",

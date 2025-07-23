@@ -52,7 +52,9 @@ function loadWebDevelopmentData(webProjects) {
         const card = `
             <div class="project-card">
                 <h3>${project.title}</h3>
-                <img src="${project.image}" alt="${project.title} Screenshot">
+                <div class="video-placeholder">
+                    <iframe src="https://www.youtube.com/embed/${project.youtube_id}?vq=hd1080&hd=1&quality=hd1080&fmt=22&rel=0&showinfo=0&modestbranding=1&iv_load_policy=3&cc_load_policy=0&fs=1&playsinline=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
                 <p>${project.description}</p>
                 <a href="${project.link}" target="_blank">View Project or GitHub</a>
             </div>
@@ -70,7 +72,9 @@ function loadIOSDevelopmentData(iosApps) {
         const card = `
             <div class="project-card">
                 <h3>${app.name}</h3>
-                <img src="${app.image}" alt="${app.name} Screenshot">
+                 <div class="video-placeholder">
+                    <iframe src="https://www.youtube.com/embed/${app.youtube_id}?vq=hd1080&hd=1&quality=hd1080&fmt=22&rel=0&showinfo=0&modestbranding=1&iv_load_policy=3&cc_load_policy=0&fs=1&playsinline=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
                 <p>${app.description}</p>
                 <a href="${app.link}" target="_blank">App Store or GitHub</a>
             </div>
@@ -88,7 +92,9 @@ function loadAndroidDevelopmentData(androidApps) {
         const card = `
             <div class="project-card">
                 <h3>${app.name}</h3>
-                <img src="${app.image}" alt="${app.name} Screenshot">
+                <div class="video-placeholder">
+                    <iframe src="https://www.youtube.com/embed/${app.youtube_id}?vq=hd1080&hd=1&quality=hd1080&fmt=22&rel=0&showinfo=0&modestbranding=1&iv_load_policy=3&cc_load_policy=0&fs=1&playsinline=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
                 <p>${app.description}</p>
                 <a href="${app.link}" target="_blank">Play Store or GitHub</a>
             </div>
@@ -126,7 +132,7 @@ function loadMusicData(songs) {
                 <h3>${song.title}</h3>
                 <p>${song.description}</p>
                 <div class="video-placeholder">
-                    <iframe src="https://www.youtube.com/embed/${song.youtube_id}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/${song.youtube_id}?vq=hd1080&hd=1&quality=hd1080&fmt=22&rel=0&showinfo=0&modestbranding=1&iv_load_policy=3&cc_load_policy=0&fs=1&playsinline=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         `;

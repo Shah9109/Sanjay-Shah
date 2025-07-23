@@ -76,7 +76,7 @@ nav ul li a.active {
 /* Hero Section */
 .hero {
     padding-top: 100px; /* Space for fixed header */
-    /* background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */ */
+    /* background: linear-gradient(to right, #6a11cb, #2575fc); Gradient background */
     color: #333; /* Adjust hero text color for pastel background */
     text-align: center;
     background-color: rgba(255, 242, 235, 0.7); /* Using a semi-transparent second color */
@@ -93,12 +93,9 @@ nav ul li a.active {
     width: 250px;
     height: 250px;
     object-fit: cover;
-    border-radius: 50%; /* This creates a circular image, remove if you want square */
-    border: 3px solid #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
     border-radius: 50%; /* Circular photo */
     border: 5px solid rgb(255, 214, 186); /* Using a pastel color for border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
 
@@ -131,6 +128,271 @@ nav ul li a.active {
 
 .social-links a:hover {
     color: rgb(255, 214, 186); /* Highlight on hover with a pastel color */
+}
+
+/* Intro Video Section */
+.intro-video-section {
+    padding: 80px 0;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 242, 235, 0.8));
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    margin: 30px 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.intro-video-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent, rgba(255, 214, 186, 0.1), transparent);
+    pointer-events: none;
+    animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+.intro-video-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #333;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out;
+}
+
+.intro-video-content p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+.video-quote-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    max-width: 1400px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.video-wrapper {
+    flex: 1;
+    min-width: 400px;
+    max-width: 600px;
+    padding: 0 20px;
+    animation: fadeInUp 1s ease-out 0.4s both;
+}
+
+.animated-quote {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    text-align: left;
+    padding: 0 20px;
+    animation: fadeInUp 1s ease-out 0.6s both;
+}
+
+.quote-text {
+    font-size: 2.5em;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #2563eb; /* Strong blue color that's always visible */
+    margin-bottom: 20px;
+    opacity: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    /* Remove gradient for now to ensure visibility */
+}
+
+.quote-word {
+    display: inline-block;
+    opacity: 1 !important;
+    transform: translateY(0);
+    animation: wordReveal 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    margin-right: 0.3em;
+    color: #2563eb;
+}
+
+.quote-emoji {
+    display: inline-block;
+    opacity: 1 !important;
+    transform: scale(1);
+    animation: emojiPop 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+    font-size: 1.2em;
+    margin-left: 0.2em;
+}
+
+.quote-underline {
+    height: 4px;
+    background: linear-gradient(90deg, #4a5fe7, #6b46c1, #ec4899);
+    border-radius: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: underlineGrow 1.5s ease-out 2s forwards;
+    box-shadow: 0 2px 8px rgba(74, 95, 231, 0.4);
+    opacity: 1;
+}
+
+@keyframes gradientShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+@keyframes wordReveal {
+    0% {
+        opacity: 1;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes emojiPop {
+    0% {
+        opacity: 1;
+        transform: scale(0.8);
+    }
+    70% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes underlineGrow {
+    to {
+        transform: scaleX(1);
+    }
+}
+
+/* Staggered animation delays for words */
+.quote-word[data-delay="0"] { animation-delay: 0.5s; }
+.quote-word[data-delay="1"] { animation-delay: 0.7s; }
+.quote-word[data-delay="2"] { animation-delay: 0.9s; }
+.quote-word[data-delay="3"] { animation-delay: 1.1s; }
+.quote-word[data-delay="4"] { animation-delay: 1.3s; }
+.quote-emoji[data-delay="5"] { animation-delay: 1.8s; }
+
+/* Ensure text is always visible */
+.quote-word, .quote-emoji {
+    opacity: 1 !important;
+    color: #2563eb !important;
+}
+
+/* Make sure the quote text container is visible */
+.animated-quote {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional fallback for quote text */
+.quote-text * {
+    color: #2563eb !important;
+    opacity: 1 !important;
+}
+
+/* Alternative fallback without gradient for better visibility */
+@supports not (-webkit-background-clip: text) {
+    .quote-text {
+        background: none !important;
+        color: #4a5fe7 !important;
+        -webkit-text-fill-color: #4a5fe7 !important;
+    }
+}
+
+/* Fallback: Show text immediately if animations don't work */
+@media (prefers-reduced-motion: reduce) {
+    .quote-word, .quote-emoji {
+        opacity: 1 !important;
+        transform: none !important;
+        animation: none !important;
+    }
+    .quote-underline {
+        transform: scaleX(1) !important;
+        animation: none !important;
+    }
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.video-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.video-container:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.25);
+    border-color: rgba(255, 214, 186, 0.6);
+}
+
+.video-container:hover::before {
+    opacity: 1;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+.video-container:hover iframe {
+    transform: scale(1.01);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Portfolio Sections */
@@ -178,8 +440,45 @@ nav ul li a.active {
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr); /* Exactly 3 cards per row */
+    gap: 30px 30px; /* row-gap column-gap */
+    position: relative;
+}
+
+/* Add vertical dividers between columns */
+.project-grid::before,
+.project-grid::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, transparent, rgba(200, 200, 255, 0.4), transparent);
+    z-index: 1;
+}
+
+.project-grid::before {
+    left: calc(33.333% - 1px);
+}
+
+.project-grid::after {
+    left: calc(66.666% - 1px);
+}
+
+/* Add horizontal dividers after each row - only for portfolio pages */
+.page-section .project-card:nth-child(3n) {
+    position: relative;
+}
+
+.page-section .project-card:nth-child(3n):after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: -50%;
+    right: -50%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, rgba(200, 200, 255, 0.4), transparent);
+    z-index: 1;
 }
 
 .project-card {
@@ -190,6 +489,8 @@ nav ul li a.active {
     text-align: left;
     transition: all 0.3s ease;
     border: 1px solid rgba(200, 200, 255, 0.5); /* Subtle border color to match background */
+    position: relative;
+    z-index: 2; /* Ensure cards appear above dividers */
 }
 
 .project-card:hover {
@@ -254,7 +555,35 @@ nav ul li a.active {
     font-size: 1em;
     line-height: 1.5;
     margin-bottom: 15px;
-     color: #333; /* Keeping text color */
+    color: #333; /* Keeping text color */
+}
+
+/* Scrollable descriptions for portfolio pages only */
+.page-section .project-card p {
+    max-height: 120px; /* Limit height for scroll */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-right: 8px; /* Space for scrollbar */
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: rgba(200, 200, 255, 0.6) transparent; /* Firefox */
+}
+
+/* Custom scrollbar for webkit browsers (Chrome, Safari) - portfolio pages only */
+.page-section .project-card p::-webkit-scrollbar {
+    width: 6px;
+}
+
+.page-section .project-card p::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+}
+
+.page-section .project-card p::-webkit-scrollbar-thumb {
+    background: rgba(200, 200, 255, 0.6);
+    border-radius: 3px;
+}
+
+.page-section .project-card p::-webkit-scrollbar-thumb:hover {
+    background: rgba(180, 180, 255, 0.8);
 }
 
 .project-card a {
@@ -451,5 +780,145 @@ footer {
 
     .contact-content {
         flex-direction: column;
+    }
+
+    /* Responsive grid for mobile - single column */
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Hide dividers on mobile */
+    .project-grid::before,
+    .project-grid::after {
+        display: none;
+    }
+
+    /* Hide horizontal dividers on mobile */
+    .page-section .project-card:nth-child(3n):after {
+        display: none;
+    }
+
+    /* Add horizontal dividers after each card on mobile */
+    .page-section .project-card:not(:last-child):after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 10%;
+        right: 10%;
+        height: 1px;
+        background: linear-gradient(to right, transparent, rgba(200, 200, 255, 0.4), transparent);
+        z-index: 1;
+    }
+
+    /* Responsive intro video section */
+    .intro-video-section {
+        padding: 60px 0;
+        margin: 20px 10px;
+    }
+
+    .intro-video-content h2 {
+        font-size: 2em;
+    }
+
+    .intro-video-content p {
+        font-size: 1.1em;
+        margin-bottom: 30px;
+    }
+
+    .video-quote-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .video-wrapper {
+        padding: 0 10px;
+        min-width: auto;
+        max-width: 100%;
+    }
+
+    .animated-quote {
+        min-width: auto;
+        max-width: 100%;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .quote-text {
+        font-size: 1.8em;
+        line-height: 1.3;
+    }
+
+    .video-container {
+        border-radius: 15px;
+        border-width: 2px;
+    }
+
+    .video-container:hover {
+        transform: translateY(-5px) scale(1.01);
+    }
+}
+
+/* Tablet responsiveness */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    /* Adjust divider for 2-column layout */
+    .project-grid::before {
+        left: calc(50% - 1px);
+    }
+
+    .project-grid::after {
+        display: none;
+    }
+
+    /* Hide 3-column horizontal dividers on tablet */
+    .page-section .project-card:nth-child(3n):after {
+        display: none;
+    }
+
+    /* Add horizontal dividers after every 2nd card on tablet */
+    .page-section .project-card:nth-child(2n):after {
+        content: '';
+        position: absolute;
+        bottom: -12px;
+        left: -25%;
+        right: -25%;
+        height: 2px;
+        background: linear-gradient(to right, transparent, rgba(200, 200, 255, 0.4), transparent);
+        z-index: 1;
+    }
+
+    /* Responsive intro video section for tablet */
+    .intro-video-section {
+        padding: 70px 0;
+        margin: 25px 15px;
+    }
+
+    .intro-video-content h2 {
+        font-size: 2.2em;
+    }
+
+    .video-quote-container {
+        gap: 50px;
+    }
+
+    .video-wrapper {
+        min-width: 350px;
+    }
+
+    .animated-quote {
+        min-width: 280px;
+    }
+
+    .quote-text {
+        font-size: 2.2em;
+    }
+
+    .video-container {
+        border-radius: 18px;
     }
 }
