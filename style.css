@@ -16,6 +16,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 a {
@@ -320,6 +321,47 @@ nav ul li a.active {
     }
 }
 
+/* Responsive images and videos */
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ensure video containers are responsive */
+.video-container {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Responsive text scaling */
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 320px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+/* Improve touch targets for mobile */
+@media (max-width: 768px) {
+    a, button, input, textarea {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    /* Better navigation for mobile */
+    nav ul li a {
+        min-height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 /* Fallback: Show text immediately if animations don't work */
 @media (prefers-reduced-motion: reduce) {
     .quote-word, .quote-emoji {
@@ -555,7 +597,7 @@ nav ul li a.active {
     font-size: 1em;
     line-height: 1.5;
     margin-bottom: 15px;
-    color: #333; /* Keeping text color */
+     color: #333; /* Keeping text color */
 }
 
 /* Scrollable descriptions for portfolio pages only */
@@ -752,30 +794,482 @@ footer {
     color: rgb(255, 214, 186); /* Highlight on hover with a pastel color */
 }
 
-/* Responsiveness */
-@media (max-width: 768px) {
+/* Enhanced Responsiveness for All Screen Sizes */
+
+/* Extra Large Screens (1440px and above) */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .hero {
+        padding: 140px 40px 100px;
+    }
+    
+    .profile-photo img {
+        width: 320px;
+        height: 320px;
+    }
+    
+    .bio h1 {
+        font-size: 4em;
+    }
+    
+    .featured-card {
+        max-width: 900px;
+        padding: 60px 50px;
+    }
+    
+    .video-quote-container {
+        gap: 80px;
+    }
+}
+
+/* Large Screens (1200px - 1439px) */
+@media (max-width: 1439px) and (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+        padding: 20px;
+    }
+    
+    .hero {
+        padding: 120px 30px 80px;
+        margin: 20px;
+    }
+    
+    .video-quote-container {
+        gap: 70px;
+    }
+}
+
+/* Medium-Large Screens (992px - 1199px) */
+@media (max-width: 1199px) and (min-width: 992px) {
+    .container {
+        max-width: 960px;
+        padding: 15px;
+    }
+    
+    .hero {
+        padding: 110px 25px 70px;
+        margin: 15px;
+    }
+    
+    .profile-photo img {
+        width: 260px;
+        height: 260px;
+    }
+    
+    .bio h1 {
+        font-size: 3.2em;
+    }
+    
+    .bio h2 {
+        font-size: 1.6em;
+    }
+    
+    .featured-card {
+        max-width: 750px;
+        padding: 45px 35px;
+    }
+    
+    .video-quote-container {
+        gap: 60px;
+    }
+    
+    .video-wrapper {
+        min-width: 380px;
+        max-width: 500px;
+    }
+}
+
+/* Tablet Landscape (769px - 991px) */
+@media (max-width: 991px) and (min-width: 769px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+    
+    .hero {
+        padding: 100px 20px 60px;
+        margin: 15px 10px;
+    }
+    
+    .profile-photo img {
+        width: 240px;
+        height: 240px;
+    }
+    
+    .bio h1 {
+        font-size: 2.8em;
+    }
+    
+    .bio h2 {
+        font-size: 1.5em;
+    }
+    
+    .bio p {
+        font-size: 1.1em;
+    }
+    
+    .featured-card {
+        max-width: 700px;
+        padding: 40px 30px;
+    }
+    
+    .featured-card h2 {
+        font-size: 2em;
+    }
+    
+    .video-quote-container {
+        gap: 50px;
+    }
+    
+    .video-wrapper {
+        min-width: 350px;
+        max-width: 450px;
+    }
+    
+    .quote-text {
+        font-size: 2.2em;
+    }
+}
+
+/* Mobile Landscape & Small Tablets (481px - 768px) */
+@media (max-width: 768px) and (min-width: 481px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+    
+    header {
+        padding: 12px 0;
+    }
+    
     header .container {
         flex-direction: column;
+        gap: 15px;
     }
-
+    
+    .logo {
+        font-size: 1.6em;
+    }
+    
     nav ul {
-        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
     }
-
-    nav ul li {
-        margin: 0 10px;
+    
+    nav ul li a {
+        padding: 8px 15px;
+        font-size: 0.9em;
     }
-
-    .hero .container {
-        flex-direction: column-reverse; /* Photo above bio on small screens */
+    
+    .hero {
+        padding: 90px 15px 50px;
+        margin: 10px 5px;
     }
+    
+    .profile-photo img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .bio h1 {
+        font-size: 2.4em;
+    }
+    
+    .bio h2 {
+        font-size: 1.3em;
+    }
+    
+    .bio p {
+        font-size: 1em;
+        max-width: 600px;
+    }
+    
+    .social-links a {
+        font-size: 1.8em;
+        margin: 0 12px;
+    }
+    
+    .portfolio-section {
+        padding: 60px 0;
+        margin: 30px 10px;
+    }
+    
+    .featured-card {
+        max-width: 100%;
+        padding: 35px 25px;
+    }
+    
+    .featured-card h2 {
+        font-size: 1.8em;
+    }
+    
+    .featured-card p {
+        font-size: 1em;
+    }
+    
+    .intro-video-section {
+        padding: 50px 0;
+        margin: 20px 10px;
+    }
+    
+    .intro-video-content h2 {
+        font-size: 2em;
+    }
+    
+    .video-quote-container {
+        flex-direction: column;
+        gap: 35px;
+    }
+    
+    .video-wrapper {
+        min-width: auto;
+        max-width: 100%;
+        padding: 0 5px;
+    }
+    
+    .animated-quote {
+        min-width: auto;
+        max-width: 100%;
+        text-align: center;
+        padding: 15px;
+    }
+    
+    .quote-text {
+        font-size: 1.6em;
+        line-height: 1.3;
+    }
+    
+    .contact-section {
+        padding: 70px 0;
+        margin: 30px 10px;
+    }
+    
+    .contact-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .contact-content form,
+    .contact-info {
+        flex: none;
+        width: 100%;
+    }
+}
 
+/* Mobile Portrait (320px - 480px) */
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 8px;
+    }
+    
+    header {
+        padding: 10px 0;
+    }
+    
+    header .container {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .logo {
+        font-size: 1.4em;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+    
+    nav ul li a {
+        padding: 6px 12px;
+        font-size: 0.8em;
+    }
+    
+    .hero {
+        padding: 80px 10px 40px;
+        margin: 8px 3px;
+    }
+    
+    .profile-photo img {
+        width: 160px;
+        height: 160px;
+    }
+    
     .bio h1 {
         font-size: 2em;
     }
-
+    
     .bio h2 {
         font-size: 1.2em;
+    }
+    
+    .bio p {
+        font-size: 0.9em;
+        max-width: 100%;
+        line-height: 1.5;
+    }
+    
+    .social-links a {
+        font-size: 1.6em;
+        margin: 0 8px;
+    }
+    
+    .portfolio-section {
+        padding: 50px 0;
+        margin: 20px 5px;
+    }
+    
+    .featured-card {
+        max-width: 100%;
+        padding: 25px 15px;
+    }
+    
+    .featured-card h2 {
+        font-size: 1.6em;
+    }
+    
+    .featured-card p {
+        font-size: 0.9em;
+        line-height: 1.6;
+    }
+    
+    .view-all-btn {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+    
+    .intro-video-section {
+        padding: 40px 0;
+        margin: 15px 5px;
+    }
+    
+    .intro-video-content h2 {
+        font-size: 1.8em;
+    }
+    
+    .intro-video-content p {
+        font-size: 1em;
+    }
+    
+    .video-quote-container {
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    .video-wrapper {
+        padding: 0;
+    }
+    
+    .animated-quote {
+        padding: 10px;
+    }
+    
+    .quote-text {
+        font-size: 1.4em;
+        line-height: 1.2;
+    }
+    
+    .contact-section {
+        padding: 60px 0;
+        margin: 20px 5px;
+    }
+    
+    .contact-section h2 {
+        font-size: 1.8em;
+    }
+    
+    .contact-content {
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+    
+    .btn-submit {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+    
+    footer {
+        padding: 15px 0;
+    }
+    
+    .footer-links a {
+        font-size: 1.3em;
+        margin: 0 8px;
+    }
+}
+
+/* Very Small Screens (below 320px) */
+@media (max-width: 319px) {
+    .container {
+        width: 98%;
+        padding: 5px;
+    }
+    
+    .hero {
+        padding: 70px 5px 30px;
+        margin: 5px 2px;
+    }
+    
+    .profile-photo img {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .bio h1 {
+        font-size: 1.8em;
+    }
+    
+    .bio h2 {
+        font-size: 1.1em;
+    }
+    
+    .bio p {
+        font-size: 0.85em;
+    }
+    
+    .social-links a {
+        font-size: 1.4em;
+        margin: 0 6px;
+    }
+    
+    .featured-card {
+        padding: 20px 10px;
+    }
+    
+    .featured-card h2 {
+        font-size: 1.4em;
+    }
+    
+    .featured-card p {
+        font-size: 0.85em;
+    }
+    
+    .quote-text {
+        font-size: 1.2em;
+    }
+    
+    nav ul li a {
+        padding: 5px 8px;
+        font-size: 0.75em;
+    }
+}
+
+/* Legacy Mobile Support */
+@media (max-width: 768px) {
+    .hero .container {
+        flex-direction: column-reverse;
     }
 
     .contact-content {
@@ -856,6 +1350,60 @@ footer {
 
     .video-container:hover {
         transform: translateY(-5px) scale(1.01);
+    }
+    
+    /* Additional responsive improvements for mobile */
+    .hero {
+        border-radius: 20px;
+    }
+    
+    .portfolio-section,
+    .intro-video-section,
+    .contact-section {
+        border-radius: 20px;
+    }
+    
+    .featured-card {
+        border-radius: 20px;
+    }
+    
+    /* Ensure text remains readable on small screens */
+    .featured-card p span {
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+    
+    /* Improve button accessibility on touch devices */
+    .view-all-btn {
+        min-height: 44px;
+        touch-action: manipulation;
+    }
+    
+    /* Better spacing for social links on mobile */
+    .social-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    /* Optimize form elements for mobile */
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        box-sizing: border-box;
+        min-height: 44px;
+    }
+    
+    .btn-submit {
+        min-height: 44px;
+        width: 100%;
+        touch-action: manipulation;
     }
 }
 
