@@ -65,7 +65,20 @@ header.header-scrolled {
     }
 }
 
-/* Faster transitions on mobile for better performance */
+/* Desktop and Tablet behavior (width > 768px) - Always visible */
+@media (min-width: 769px) {
+    header {
+        position: fixed !important;
+        transform: translateY(0) !important;
+    }
+    
+    /* Ensure header never hides on desktop/tablet */
+    header.header-hidden {
+        transform: translateY(0) !important;
+    }
+}
+
+/* Mobile behavior (width ≤ 768px) - Hide/show with 3-second delay */
 @media (max-width: 768px) {
     header {
         transition: transform 0.25s ease-out, 
@@ -75,6 +88,11 @@ header.header-scrolled {
     
     header.header-scrolled {
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    }
+    
+    /* Mobile-specific hide behavior */
+    header.header-hidden {
+        transform: translateY(-100%);
     }
 }
 

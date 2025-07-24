@@ -140,7 +140,7 @@ function loadMusicData(songs) {
     });
 }
 
-// Smart Header Scroll Functionality (Same as index page)
+// Smart Header Scroll Functionality with Responsive Behavior
 class SmartHeader {
     constructor() {
         this.header = document.querySelector('header');
@@ -148,6 +148,8 @@ class SmartHeader {
         this.scrollThreshold = 10; // Minimum scroll distance to trigger
         this.isScrolling = false;
         this.headerHeight = 0;
+        this.showTimeout = null; // For 3-second delay on mobile
+        this.isMobile = false;
         
         this.init();
     }
@@ -158,16 +160,34 @@ class SmartHeader {
         // Get header height dynamically
         this.headerHeight = this.header.offsetHeight;
         
+        // Check initial screen size
+        this.checkScreenSize();
+        
         // Debounced scroll handler
         this.debouncedScrollHandler = this.debounce(this.handleScroll.bind(this), 50);
         
         // Add scroll event listener
         window.addEventListener('scroll', this.debouncedScrollHandler, { passive: true });
         
-        // Handle resize to recalculate header height
+        // Handle resize to recalculate header height and check screen size
         window.addEventListener('resize', this.debounce(() => {
             this.headerHeight = this.header.offsetHeight;
+            this.checkScreenSize();
         }, 100));
+    }
+    
+    checkScreenSize() {
+        const previousIsMobile = this.isMobile;
+        this.isMobile = window.innerWidth <= 768;
+        
+        // If switching from mobile to desktop, ensure header is visible
+        if (previousIsMobile && !this.isMobile) {
+            this.header.classList.remove('header-hidden');
+            if (this.showTimeout) {
+                clearTimeout(this.showTimeout);
+                this.showTimeout = null;
+            }
+        }
     }
     
     handleScroll() {
@@ -178,19 +198,34 @@ class SmartHeader {
             return;
         }
         
-        // Add scrolled class when scrolled down
+        // Add scrolled class when scrolled down (for shadow effect)
         if (currentScrollTop > this.headerHeight) {
             this.header.classList.add('header-scrolled');
         } else {
             this.header.classList.remove('header-scrolled');
         }
         
-        // Hide/show header based on scroll direction
-        if (currentScrollTop > this.lastScrollTop && currentScrollTop > this.headerHeight) {
-            // Scrolling down - hide header
-            this.header.classList.add('header-hidden');
-        } else if (currentScrollTop < this.lastScrollTop) {
-            // Scrolling up - show header
+        // Only apply hide/show behavior on mobile
+        if (this.isMobile) {
+            // Clear any existing timeout
+            if (this.showTimeout) {
+                clearTimeout(this.showTimeout);
+                this.showTimeout = null;
+            }
+            
+            // Hide/show header based on scroll direction
+            if (currentScrollTop > this.lastScrollTop && currentScrollTop > this.headerHeight) {
+                // Scrolling down - hide header immediately
+                this.header.classList.add('header-hidden');
+            } else if (currentScrollTop < this.lastScrollTop) {
+                // Scrolling up - show header after 3-second delay
+                this.showTimeout = setTimeout(() => {
+                    this.header.classList.remove('header-hidden');
+                    this.showTimeout = null;
+                }, 1000);
+            }
+        } else {
+            // On desktop/tablet, always keep header visible
             this.header.classList.remove('header-hidden');
         }
         
