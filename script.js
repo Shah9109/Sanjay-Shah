@@ -86,8 +86,84 @@ function addViewAllButtons() {
     }
 }
 
+// Smart Header Scroll Functionality
+class SmartHeader {
+    constructor() {
+        this.header = document.querySelector('header');
+        this.lastScrollTop = 0;
+        this.scrollThreshold = 10; // Minimum scroll distance to trigger
+        this.isScrolling = false;
+        this.headerHeight = 0;
+        
+        this.init();
+    }
+    
+    init() {
+        if (!this.header) return;
+        
+        // Get header height dynamically
+        this.headerHeight = this.header.offsetHeight;
+        
+        // Debounced scroll handler
+        this.debouncedScrollHandler = this.debounce(this.handleScroll.bind(this), 50);
+        
+        // Add scroll event listener
+        window.addEventListener('scroll', this.debouncedScrollHandler, { passive: true });
+        
+        // Handle resize to recalculate header height
+        window.addEventListener('resize', this.debounce(() => {
+            this.headerHeight = this.header.offsetHeight;
+        }, 100));
+    }
+    
+    handleScroll() {
+        const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        // Don't do anything if scroll position hasn't changed significantly
+        if (Math.abs(currentScrollTop - this.lastScrollTop) < this.scrollThreshold) {
+            return;
+        }
+        
+        // Add scrolled class when scrolled down
+        if (currentScrollTop > this.headerHeight) {
+            this.header.classList.add('header-scrolled');
+        } else {
+            this.header.classList.remove('header-scrolled');
+        }
+        
+        // Hide/show header based on scroll direction
+        if (currentScrollTop > this.lastScrollTop && currentScrollTop > this.headerHeight) {
+            // Scrolling down - hide header
+            this.header.classList.add('header-hidden');
+        } else if (currentScrollTop < this.lastScrollTop) {
+            // Scrolling up - show header
+            this.header.classList.remove('header-hidden');
+        }
+        
+        this.lastScrollTop = currentScrollTop;
+    }
+    
+    // Debounce function for performance optimization
+    debounce(func, wait) {
+        let timeout;
+        return function executedFunction(...args) {
+            const later = () => {
+                clearTimeout(timeout);
+                func(...args);
+            };
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+        };
+    }
+}
+
 // Load data when the page is ready
-document.addEventListener('DOMContentLoaded', loadPortfolioData);
+document.addEventListener('DOMContentLoaded', function() {
+    loadPortfolioData();
+    
+    // Initialize smart header
+    new SmartHeader();
+});
 
 // Basic client-side contact form handling (prevents default submission)
 const contactForm = document.querySelector('.contact-section form');
